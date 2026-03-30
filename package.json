@@ -1,0 +1,9 @@
+{
+  "name": "zhasyl-umit-site",
+  "version": "1.0.0",
+  "description": "Сайт ТОО Жасыл Үміт",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
