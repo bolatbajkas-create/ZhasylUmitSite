@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ТОО «Жасыл Үміт» — Санитарно-гигиеническая продукция</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- НАВИГАЦИЯ -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">🌿 Жасыл Үміт</span>
+      <div class="nav-links">
+        <a href="#about">О нас</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#pages">Прайс-лист</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO — фото Гульзат + объявление -->
+  <section class="hero" id="about">
+    <div class="hero-inner">
+      <div class="hero-photo-wrap">
+        <img src="Image/Гульзат.jpg" alt="Гульзат — торговый представитель ТОО Жасыл Үміт" class="hero-photo" />
+        <div class="hero-badge">Торговый представитель</div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-company">ТОО «Жасыл Үміт»</p>
+        <h1 class="hero-name">Гульзат</h1>
+        <p class="hero-title">Торговый представитель</p>
+        <div class="hero-ad">
+          <h2>Всё необходимое для дома, офиса и бизнеса — в одном месте!</h2>
+          <ul class="product-list">
+            <li>🧻 Туалетная бумага</li>
+            <li>⬜ Салфетки (белые, сервировочные, вытяжные)</li>
+            <li>🧻🧼 Бумажные и универсальные полотенца</li>
+            <li>🍽️🧴 Моющие средства для посуды</li>
+            <li>👕 Средства для стирки (порошки, капсулы, гранулы)</li>
+            <li>🧽 Мыло</li>
+          </ul>
+          <div class="hero-badges-row">
+            <span class="badge green">🚚 Бесплатная доставка</span>
+            <span class="badge blue">📦 Оптом и в розницу</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="https://wa.me/77778638877" class="btn btn-wa" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="22" alt="WhatsApp" /> Написать в WhatsApp
+          </a>
+          <a href="https://t.me/ZhasylUmitBot" class="btn btn-tg" target="_blank">
+            ✈️ Telegram-бот
+          </a>
+        </div>
+        <p class="hero-phone">📲 <a href="tel:+77778638877">+7 777 863 88 77</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАТАЛОГ -->
+  <section class="catalog" id="catalog">
+    <div class="container">
+      <h2 class="section-title">Наш каталог</h2>
+      <div class="category-tabs" id="categoryTabs">
+        <button class="tab active" data-cat="toilet_paper">🧻 Туалетная бумага</button>
+        <button class="tab" data-cat="napkins">⬜ Салфетки</button>
+        <button class="tab" data-cat="serving_napkins">🍽️ Сервировочные</button>
+        <button class="tab" data-cat="towels">🧻 Полотенца</button>
+        <button class="tab" data-cat="dish_soap">🍽️🧴 Посуда</button>
+        <button class="tab" data-cat="laundry">👕 Стирка</button>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+      <div class="catalog-cta">
+        <p>Нужен товар или нет в списке нужной позиции?</p>
+        <a href="https://wa.me/77778638877?text=Здравствуйте!%20Хочу%20сделать%20заказ" class="btn btn-wa" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="20" alt="WA" /> Написать Гульзат
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРАЙС-ЛИСТ (СТРАНИЦЫ КАТАЛОГА) -->
+  <section class="pages-section" id="pages">
+    <div class="container">
+      <h2 class="section-title">Прайс-лист</h2>
+      <p class="pages-subtitle">Нажмите на страницу для увеличения</p>
+
+      <div class="pages-grid">
+        <div class="page-card" onclick="openLightbox(this)">
+          <img src="cat-01.jpg" alt="Туалетная бумага — 56+М, Фиалка, Маолин" loading="lazy" />
+          <div class="page-label">🧻 Туалетная бумага</div>
+        </div>
+        <div class="page-card" onclick="openLightbox(this)">
+          <img src="cat-02.jpg" alt="Туалетная бумага — Южная Столица, Ак Бота, JOY" loading="lazy" />
+          <div class="page-label">🧻 Туалетная бумага</div>
+        </div>
+        <div class="page-card" onclick="openLightbox(this)">
+          <img src="cat-03.jpg" alt="Туалетная бумага JOY, Махаббатпен" loading="lazy" />
+          <div class="page-label">🧻 Туалетная бумага</div>
+        </div>
+        <div class="page-card" onclick="openLightbox(this)">
+          <img src="cat-04.jpg" alt="Салфетки" loading="lazy" />
+          <div class="page-label">⬜ Салфетки</div>
+        </div>
+        <div class="page-card" onclick="openLightbox(this)">
+          <img src="cat-05.jpg" alt="Сервировочные салфетки" loading="lazy" />
+          <div class="page-label">🍽️ Сервировочные салфетки</div>
+        </div>
+        <div class="page-card" onclick="openLightbox(this)">
+          <img src="cat-06.jpg" alt="Бумажные полотенца" loading="lazy" />
+          <div class="page-label">🧻 Бумажные полотенца</div>
+        </div>
+        <div class="page-card" onclick="openLightbox(this)">
+          <img src="cat-07.jpg" alt="Моющие средства для посуды LIBY, МАОЛИН" loading="lazy" />
+          <div class="page-label">🍽️🧴 Средства для посуды</div>
+        </div>
+        <div class="page-card" onclick="openLightbox(this)">
+          <img src="cat-08.jpg" alt="Средства для стирки — капсулы" loading="lazy" />
+          <div class="page-label">👕 Капсулы для стирки</div>
+        </div>
+        <div class="page-card" onclick="openLightbox(this)">
+          <img src="cat-09.jpg" alt="Капсулы для стирки — ароматы" loading="lazy" />
+          <div class="page-label">👕 Капсулы для стирки</div>
+        </div>
+        <div class="page-card" onclick="openLightbox(this)">
+          <img src="cat-10.jpg" alt="Кондиционеры в гранулах, порошок JOY" loading="lazy" />
+          <div class="page-label">👕 Кондиционеры, порошок</div>
+        </div>
+        <div class="page-card" onclick="openLightbox(this)">
+          <img src="cat-11.jpg" alt="Стиральный порошок МАОЛИН" loading="lazy" />
+          <div class="page-label">👕 Порошок МАОЛИН</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЛАЙТБОКС -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">✕</span>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <!-- КОНТАКТЫ -->
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <h2 class="section-title white">Контакты</h2>
+      <div class="contacts-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📱</div>
+          <div class="contact-label">Телефон / WhatsApp</div>
+          <a href="tel:+77778638877" class="contact-value">+7 777 863 88 77</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">✈️</div>
+          <div class="contact-label">Telegram-бот</div>
+          <a href="https://t.me/ZhasylUmitBot" target="_blank" class="contact-value">@ZhasylUmitBot</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🕐</div>
+          <div class="contact-label">Режим работы</div>
+          <span class="contact-value">Пн–Сб: 9:00 – 18:00</span>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🚚</div>
+          <div class="contact-label">Доставка</div>
+          <span class="contact-value">Бесплатно!</span>
+        </div>
+      </div>
+      <div class="contacts-btns">
+        <a href="https://wa.me/77778638877?text=Здравствуйте!%20Хочу%20сделать%20заказ" class="btn btn-wa btn-lg" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24" alt="WA" /> Написать в WhatsApp
+        </a>
+        <a href="https://t.me/ZhasylUmitBot" class="btn btn-tg btn-lg" target="_blank">
+          ✈️ Открыть Telegram-бот
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 ТОО «Жасыл Үміт» · Санитарно-гигиеническая продукция</p>
+      <p>Гульзат — торговый представитель · <a href="tel:+77778638877">+7 777 863 88 77</a></p>
+    </div>
+  </footer>
+
+  <!-- ПЛАВАЮЩАЯ КНОПКА WHATSAPP -->
+  <a href="https://wa.me/77778638877?text=Здравствуйте!%20Хочу%20узнать%20о%20товарах" class="float-wa" target="_blank" title="Написать в WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
+  <script>
+    const catalog = {
+      toilet_paper: {
+        name: '🧻 Туалетная бумага',
+        items: [
+          { code: 'ТБ-075', name: '56+М (х10)', desc: 'Однослойная, макулатура, с перфорацией, со втулкой, 35м', price: 800 },
+          { code: 'ТБ-504', name: 'ФИАЛКА (х10)', desc: 'Однослойная, макулатура, без перфорации, без втулки, 35м', price: 800 },
+          { code: 'ТБ-108', name: 'МАОЛИН (х10)', desc: 'Двухслойная, макулатура, с тиснением, с перфорацией, со втулкой, 12.8м', price: null },
+          { code: 'ТБ-764', name: 'ЮЖНАЯ СТОЛИЦА (х48)', desc: 'Однослойная, макулатура, без перфорации, без втулки, 9см', price: 99 },
+          { code: 'ТБ-047', name: 'МАОЛИН белая (х10)', desc: 'Двухслойная, композитная, с тиснением, со втулкой, 20м', price: 910 },
+          { code: 'ТБ-105', name: 'АК БОТА (х10)', desc: '100% целлюлоза, двухслойная, с перфорацией, со втулкой, 20м', price: 1205 },
+          { code: 'ТБ-508', name: 'JOY (х12)', desc: '100% целлюлоза, четырёхслойная, с тиснением, без втулки, 15м', price: null },
+          { code: 'ТБ-546', name: 'JOY (х18)', desc: '100% целлюлоза, четырёхслойная, белая, без тиснения, 14м', price: 9060 },
+          { code: 'ТБ-553', name: 'JOY (х28)', desc: '100% целлюлоза, трёхслойная, с перфорацией, со втулкой, 22м', price: 9999 },
+          { code: 'ТБ-560', name: 'JOY (х12)', desc: '100% целлюлоза, трёхслойная, с перфорацией, со втулкой, 22м', price: 4049 },
+          { code: 'ТБ-365', name: 'JOY (х10)', desc: '100% целлюлоза, двухслойная, с перфорацией, со втулкой, 28м', price: 1780 },
+          { code: 'ТБ-402', name: 'JOY (х4)', desc: '100% целлюлоза, трёхслойная, с тиснением, со втулкой, 20м', price: 694 },
+          { code: 'ТБ-900', name: 'МАХАББАТПЕН (х10)', desc: '100% целлюлоза, двухслойная, с тиснением, со втулкой, 22м', price: 1400 },
+        ]
+      },
+      napkins: {
+        name: '⬜ Салфетки',
+        items: [
+          { code: 'С-436', name: 'ОРХИДЕЯ (х100)', desc: '100% целлюлоза, однослойная, с тиснением, 240х240мм', price: 901 },
+          { code: 'С-429', name: 'ФИАЛКА (х70)', desc: '100% целлюлоза, однослойная, 240х240мм', price: 473 },
+          { code: 'С-474', name: 'ПАНДА (х100)', desc: 'Композитная, однослойная, с тиснением, 240х240мм', price: 485 },
+          { code: 'С-375', name: 'ПАНДА (х70)', desc: 'Композитная, однослойная, с тиснением, 240х240мм', price: 450 },
+          { code: 'С-389', name: 'JOY (х100)', desc: '100% целлюлоза, однослойная, с тиснением, 240х240мм', price: 901 },
+          { code: 'С-419', name: 'JOY (х70)', desc: '100% целлюлоза, однослойная, с тиснением, 240х240мм', price: 473 },
+          { code: 'С-577', name: 'JOY (х120)', desc: '100% целлюлоза, трёхслойная, с тиснением, 175х126мм', price: 439 },
+          { code: 'ТБ-396', name: 'JOY (х150)', desc: '100% целлюлоза, двухслойная, без тиснения, 168х190мм', price: 344 },
+        ]
+      },
+      serving_napkins: {
+        name: '🍽️ Сервировочные салфетки',
+        items: [
+          { code: 'СС-1273', name: 'Двухслойные (20л)', desc: '100% целлюлоза, с рисунком, 330х330мм', price: null },
+          { code: 'СС-1280', name: 'Двухслойные (20л)', desc: '100% целлюлоза, с рисунком, 330х330мм', price: null },
+          { code: 'СС-1297', name: 'Двухслойные (20л)', desc: '100% целлюлоза, с рисунком, 330х330мм', price: 344 },
+          { code: 'СС-1150', name: 'Трёхслойные (20л)', desc: '100% целлюлоза, с рисунком, 330х330мм', price: 379 },
+          { code: 'СС-962',  name: 'Трёхслойные (20л)', desc: '100% целлюлоза, с рисунком, 330х330мм', price: null },
+          { code: 'СС-948',  name: 'Трёхслойные (20л)', desc: '100% целлюлоза, с рисунком, 330х330мм', price: null },
+          { code: 'СС-917',  name: 'Трёхслойные (20л)', desc: '100% целлюлоза, с рисунком, 330х330мм', price: null },
+          { code: 'СС-1433', name: 'Трёхслойные (20л)', desc: '100% целлюлоза, с рисунком, 330х330мм', price: null },
+          { code: 'СС-1167', name: 'Трёхслойные (20л)', desc: '100% целлюлоза, с рисунком, 330х330мм', price: null },
+        ]
+      },
+      towels: {
+        name: '🧻 Бумажные полотенца',
+        items: [
+          { code: 'БП-870', name: 'МАХАББАТПЕН (х2)', desc: '100% целлюлоза, трёхслойная, с тиснением, со втулкой, 17м', price: 454 },
+          { code: 'БП-481', name: 'ФИАЛКА (х2)', desc: 'Композитная, двухслойная, с тиснением, со втулкой, 18м', price: 858 },
+          { code: 'БП-372', name: 'JOY (х2)', desc: '100% целлюлоза, трёхслойная, с тиснением, со втулкой, 20м', price: 890 },
+          { code: 'УП-594', name: 'JOY универсальные (рулон)', desc: 'Состав: вискоза+полиэстер', price: 813 },
+          { code: 'УП-600', name: 'JOY универсальные (рулон)', desc: 'Состав: полиэстер+целлюлоза', price: 813 },
+          { code: 'УП-617', name: 'JOY универсальные (х2)', desc: 'Безводная целлюлоза', price: 3963 },
+        ]
+      },
+      dish_soap: {
+        name: '🍽️🧴 Средства для посуды',
+        items: [
+          { code: 'СМП-061', name: 'LIBY 2кг', desc: 'Гель для посуды, экологичный, с витаминами', price: 1907 },
+          { code: 'СМП-731', name: 'LIBY 2кг (лимон)', desc: 'Гель для посуды, экологичный, с витаминами', price: 1439 },
+          { code: 'СМП-779', name: 'LIBY 1.5кг', desc: 'Природное средство из водостойких материалов', price: 1439 },
+          { code: 'СМП-860', name: 'LIBY 1.5кг (лимон)', desc: 'Природное средство из водостойких материалов', price: 1490 },
+          { code: 'СМП-853', name: 'МАОЛИН 1.5кг', desc: 'Эффективное средство, удаляет жир и запахи', price: 1490 },
+        ]
+      },
+      laundry: {
+        name: '👕 Средства для стирки',
+        items: [
+          { code: 'МП-003', name: 'МАОЛИН мыло-пятновыводитель', desc: 'Состав: натриевая мирная кислота, добавки', price: 966 },
+          { code: 'КК-089', name: 'Капсулы 8х (96шт)', desc: 'Удаление пятен и бактерий, хлопок, шёлк, синтетика', price: 2793 },
+          { code: 'КК-102', name: 'Капсулы 8х (56шт)', desc: 'Для разных видов тканей', price: 3903 },
+          { code: 'КК-065', name: 'Капсулы 8х (36шт)', desc: 'Удаление пятен и бактерий, мягкий аромат', price: 2354 },
+          { code: 'КК-822', name: 'Капсулы 8х (24шт)', desc: 'Экстракт оливкового масла, 99.9% антибактериальный', price: 1859 },
+          { code: 'КК-2317', name: 'Цветение лотоса (30шт)', desc: 'Капсулы PRO, кондиционер, 200гр', price: 1494 },
+          { code: 'К-2270', name: 'Личи кондиционер (200гр)', desc: 'Гранулы, для белья, стойкий аромат 7 дней', price: 1693 },
+          { code: 'К-2263', name: 'Снежное волшебство (200гр)', desc: 'Гранулы-кондиционер, для белья', price: 1484 },
+          { code: 'СП-815', name: 'JOY порошок 1кг', desc: 'С дозатором', price: 954 },
+          { code: 'СП-808', name: 'JOY порошок 4кг', desc: 'С дозатором', price: 3774 },
+          { code: 'СП-808', name: 'МАОЛИН порошок 4кг', desc: 'С дозатором', price: 3674 },
+          { code: 'СП-034', name: 'МАОЛИН порошок 6кг', desc: 'С пластиковой ручкой', price: 5667 },
+          { code: 'СП-041', name: 'МАОЛИН порошок 9кг', desc: 'С пластиковой ручкой', price: 8504 },
+        ]
+      }
+    };
+
+    function formatPrice(price) {
+      if (!price) return 'Цена по запросу';
+      return price.toLocaleString('ru-RU') + ' тг';
+    }
+
+    function renderProducts(catKey) {
+      const grid = document.getElementById('productsGrid');
+      const cat = catalog[catKey];
+      grid.innerHTML = cat.items.map(item => `
+        <div class="product-card">
+          <div class="product-code">${item.code}</div>
+          <div class="product-name">${item.name}</div>
+          <div class="product-desc">${item.desc}</div>
+          <div class="product-price ${!item.price ? 'price-request' : ''}">${formatPrice(item.price)}</div>
+          <a href="https://wa.me/77778638877?text=Здравствуйте!%20Хочу%20заказать%20арт.%20${encodeURIComponent(item.code)}%20—%20${encodeURIComponent(item.name)}"
+             class="product-order" target="_blank">Заказать</a>
+        </div>
+      `).join('');
+    }
+
+    document.getElementById('categoryTabs').addEventListener('click', function(e) {
+      const btn = e.target.closest('.tab');
+      if (!btn) return;
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      renderProducts(btn.dataset.cat);
+    });
+
+    renderProducts('toilet_paper');
+
+    // === ЛАЙТБОКС ===
+    function openLightbox(card) {
+      const img = card.querySelector('img');
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-img').alt = img.alt;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+</body>
+</html>
