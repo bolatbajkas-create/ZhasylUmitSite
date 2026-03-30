@@ -4,59 +4,107 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ТОО «Жасыл Үміт» — Санитарно-гигиеническая продукция</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- НАВИГАЦИЯ -->
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-inner">
-      <span class="nav-logo">🌿 Жасыл Үміт</span>
+      <a href="#" class="nav-logo">
+        <span class="nav-logo-icon">🌿</span>
+        <span>Жасыл Үміт</span>
+      </a>
       <div class="nav-links">
-        <a href="#about">О нас</a>
+        <a href="#catalog">Товары</a>
         <a href="#catalog">Каталог</a>
-        <a href="#pages">Прайс-лист</a>
-        <a href="#contacts">Контакты</a>
+        <a href="https://t.me/ZhasylUmitBot" target="_blank">Чат-бот</a>
+        <a href="#contacts">Заказать</a>
       </div>
+      <div class="nav-actions">
+        <a href="https://t.me/ZhasylUmitBot" class="btn-nav-tg" target="_blank">✈️ Telegram</a>
+        <a href="https://wa.me/77778638877" class="btn-nav-wa" target="_blank">💬 WhatsApp</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#catalog">Товары</a>
+      <a href="#catalog">Каталог</a>
+      <a href="https://t.me/ZhasylUmitBot" target="_blank">Чат-бот</a>
+      <a href="#contacts">Заказать</a>
+      <a href="https://t.me/ZhasylUmitBot" target="_blank">✈️ Telegram</a>
+      <a href="https://wa.me/77778638877" target="_blank">💬 WhatsApp</a>
     </div>
   </nav>
 
-  <!-- HERO — фото Гульзат + объявление -->
+  <!-- HERO -->
   <section class="hero" id="about">
     <div class="hero-inner">
-      <div class="hero-photo-wrap">
-        <img src="Image/Гульзат.jpg" alt="Гульзат — торговый представитель ТОО Жасыл Үміт" class="hero-photo" />
-        <div class="hero-badge">Торговый представитель</div>
-      </div>
-      <div class="hero-text">
-        <p class="hero-company">ТОО «Жасыл Үміт»</p>
-        <h1 class="hero-name">Гульзат</h1>
-        <p class="hero-title">Торговый представитель</p>
-        <div class="hero-ad">
-          <h2>Всё необходимое для дома, офиса и бизнеса — в одном месте!</h2>
-          <ul class="product-list">
-            <li>🧻 Туалетная бумага</li>
-            <li>⬜ Салфетки (белые, сервировочные, вытяжные)</li>
-            <li>🧻🧼 Бумажные и универсальные полотенца</li>
-            <li>🍽️🧴 Моющие средства для посуды</li>
-            <li>👕 Средства для стирки (порошки, капсулы, гранулы)</li>
-            <li>🧽 Мыло</li>
-          </ul>
-          <div class="hero-badges-row">
-            <span class="badge green">🚚 Бесплатная доставка</span>
-            <span class="badge blue">📦 Оптом и в розницу</span>
-          </div>
+
+      <!-- Левая часть -->
+      <div class="hero-left">
+        <div class="hero-company-badge">
+          <span class="badge-dot"></span> ТОО «ЖАСЫЛ ҮМІТ»
+        </div>
+        <h1 class="hero-heading">
+          Всё для<br>
+          <span class="hero-green">чистоты</span> и<br>
+          гигиены
+        </h1>
+        <p class="hero-desc">
+          Санитарно-гигиеническая продукция оптом и в розницу.
+          Бумага, салфетки, полотенца, моющие средства. Бесплатная доставка!
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">🧻 Туалетная бумага</span>
+          <span class="hero-tag">🧴 Салфетки</span>
+          <span class="hero-tag">🧻 Полотенца</span>
+          <span class="hero-tag">🍽️ Для посуды</span>
+          <span class="hero-tag">👕 Для стирки</span>
+          <span class="hero-tag">🚚 Бесплатная доставка</span>
         </div>
         <div class="hero-cta">
-          <a href="https://wa.me/77778638877" class="btn btn-wa" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="22" alt="WhatsApp" /> Написать в WhatsApp
-          </a>
-          <a href="https://t.me/ZhasylUmitBot" class="btn btn-tg" target="_blank">
-            ✈️ Telegram-бот
-          </a>
+          <a href="https://wa.me/77778638877?text=Здравствуйте!%20Хочу%20сделать%20заказ" class="btn-order" target="_blank">🛒 Сделать заказ</a>
+          <a href="https://wa.me/77778638877" class="btn-wa-hero" target="_blank">💬 WhatsApp</a>
         </div>
-        <p class="hero-phone">📲 <a href="tel:+77778638877">+7 777 863 88 77</a></p>
+        <div class="hero-trust">
+          <span>✅ Опт и розница</span>
+          <span>🚚 Бесплатная доставка</span>
+          <span>⭐ Проверенный поставщик</span>
+        </div>
       </div>
+
+      <!-- Правая часть — карточка -->
+      <div class="hero-right">
+        <div class="contact-card">
+          <div class="card-header">
+            <div class="card-company-name">ТОО «ЖАСЫЛ ҮМІТ»</div>
+            <div class="card-company-desc">Санитарно-гигиеническая<br>продукция</div>
+          </div>
+          <div class="card-body">
+            <div class="card-photo-wrap">
+              <img src="Image/Гульзат.jpg" alt="Гульзат — торговый представитель" class="card-photo" />
+            </div>
+            <div class="card-name">Гульзат</div>
+            <div class="card-role">Торговый представитель</div>
+            <div class="card-specialty-tag">Санитарно-гигиеническая продукция</div>
+            <a href="tel:+77778638877" class="card-phone">
+              <span class="phone-icon">📞</span> +7 (777) 863-88-77
+            </a>
+            <a href="https://t.me/ZhasylUmitBot" class="card-btn card-btn-tg" target="_blank">
+              ✈️ Telegram: @ZhasylUmitBot
+            </a>
+            <a href="https://wa.me/77778638877" class="card-btn card-btn-wa" target="_blank">
+              💬 Написать в WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -66,28 +114,27 @@
       <h2 class="section-title">Наш каталог</h2>
       <div class="category-tabs" id="categoryTabs">
         <button class="tab active" data-cat="toilet_paper">🧻 Туалетная бумага</button>
-        <button class="tab" data-cat="napkins">⬜ Салфетки</button>
+        <button class="tab" data-cat="napkins">🧴 Салфетки</button>
         <button class="tab" data-cat="serving_napkins">🍽️ Сервировочные</button>
         <button class="tab" data-cat="towels">🧻 Полотенца</button>
-        <button class="tab" data-cat="dish_soap">🍽️🧴 Посуда</button>
+        <button class="tab" data-cat="dish_soap">🍽️ Посуда</button>
         <button class="tab" data-cat="laundry">👕 Стирка</button>
       </div>
       <div class="products-grid" id="productsGrid"></div>
       <div class="catalog-cta">
         <p>Нужен товар или нет в списке нужной позиции?</p>
-        <a href="https://wa.me/77778638877?text=Здравствуйте!%20Хочу%20сделать%20заказ" class="btn btn-wa" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="20" alt="WA" /> Написать Гульзат
+        <a href="https://wa.me/77778638877?text=Здравствуйте!%20Хочу%20сделать%20заказ" class="btn-order" target="_blank">
+          💬 Написать Гульзат
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ПРАЙС-ЛИСТ (СТРАНИЦЫ КАТАЛОГА) -->
+  <!-- ПРАЙС-ЛИСТ -->
   <section class="pages-section" id="pages">
     <div class="container">
       <h2 class="section-title">Прайс-лист</h2>
       <p class="pages-subtitle">Нажмите на страницу для увеличения</p>
-
       <div class="pages-grid">
         <div class="page-card" onclick="openLightbox(this)">
           <img src="cat-01.jpg" alt="Туалетная бумага — 56+М, Фиалка, Маолин" loading="lazy" />
@@ -103,7 +150,7 @@
         </div>
         <div class="page-card" onclick="openLightbox(this)">
           <img src="cat-04.jpg" alt="Салфетки" loading="lazy" />
-          <div class="page-label">⬜ Салфетки</div>
+          <div class="page-label">🧴 Салфетки</div>
         </div>
         <div class="page-card" onclick="openLightbox(this)">
           <img src="cat-05.jpg" alt="Сервировочные салфетки" loading="lazy" />
@@ -115,7 +162,7 @@
         </div>
         <div class="page-card" onclick="openLightbox(this)">
           <img src="cat-07.jpg" alt="Моющие средства для посуды LIBY, МАОЛИН" loading="lazy" />
-          <div class="page-label">🍽️🧴 Средства для посуды</div>
+          <div class="page-label">🍽️ Средства для посуды</div>
         </div>
         <div class="page-card" onclick="openLightbox(this)">
           <img src="cat-08.jpg" alt="Средства для стирки — капсулы" loading="lazy" />
@@ -148,32 +195,32 @@
     <div class="container">
       <h2 class="section-title white">Контакты</h2>
       <div class="contacts-grid">
-        <div class="contact-card">
+        <div class="contact-info-card">
           <div class="contact-icon">📱</div>
           <div class="contact-label">Телефон / WhatsApp</div>
           <a href="tel:+77778638877" class="contact-value">+7 777 863 88 77</a>
         </div>
-        <div class="contact-card">
+        <div class="contact-info-card">
           <div class="contact-icon">✈️</div>
           <div class="contact-label">Telegram-бот</div>
           <a href="https://t.me/ZhasylUmitBot" target="_blank" class="contact-value">@ZhasylUmitBot</a>
         </div>
-        <div class="contact-card">
+        <div class="contact-info-card">
           <div class="contact-icon">🕐</div>
           <div class="contact-label">Режим работы</div>
           <span class="contact-value">Пн–Сб: 9:00 – 18:00</span>
         </div>
-        <div class="contact-card">
+        <div class="contact-info-card">
           <div class="contact-icon">🚚</div>
           <div class="contact-label">Доставка</div>
           <span class="contact-value">Бесплатно!</span>
         </div>
       </div>
       <div class="contacts-btns">
-        <a href="https://wa.me/77778638877?text=Здравствуйте!%20Хочу%20сделать%20заказ" class="btn btn-wa btn-lg" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24" alt="WA" /> Написать в WhatsApp
+        <a href="https://wa.me/77778638877?text=Здравствуйте!%20Хочу%20сделать%20заказ" class="btn-order btn-lg" target="_blank">
+          💬 Написать в WhatsApp
         </a>
-        <a href="https://t.me/ZhasylUmitBot" class="btn btn-tg btn-lg" target="_blank">
+        <a href="https://t.me/ZhasylUmitBot" class="btn-tg-outline btn-lg" target="_blank">
           ✈️ Открыть Telegram-бот
         </a>
       </div>
@@ -190,10 +237,15 @@
 
   <!-- ПЛАВАЮЩАЯ КНОПКА WHATSAPP -->
   <a href="https://wa.me/77778638877?text=Здравствуйте!%20Хочу%20узнать%20о%20товарах" class="float-wa" target="_blank" title="Написать в WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    💬
   </a>
 
   <script>
+    // Burger menu
+    document.getElementById('navBurger').addEventListener('click', function() {
+      document.getElementById('navMobile').classList.toggle('open');
+    });
+
     const catalog = {
       toilet_paper: {
         name: '🧻 Туалетная бумага',
@@ -214,7 +266,7 @@
         ]
       },
       napkins: {
-        name: '⬜ Салфетки',
+        name: '🧴 Салфетки',
         items: [
           { code: 'С-436', name: 'ОРХИДЕЯ (х100)', desc: '100% целлюлоза, однослойная, с тиснением, 240х240мм', price: 901 },
           { code: 'С-429', name: 'ФИАЛКА (х70)', desc: '100% целлюлоза, однослойная, 240х240мм', price: 473 },
@@ -227,7 +279,7 @@
         ]
       },
       serving_napkins: {
-        name: '🍽️ Сервировочные салфетки',
+        name: '🍽️ Сервировочные',
         items: [
           { code: 'СС-1273', name: 'Двухслойные (20л)', desc: '100% целлюлоза, с рисунком, 330х330мм', price: null },
           { code: 'СС-1280', name: 'Двухслойные (20л)', desc: '100% целлюлоза, с рисунком, 330х330мм', price: null },
@@ -252,7 +304,7 @@
         ]
       },
       dish_soap: {
-        name: '🍽️🧴 Средства для посуды',
+        name: '🍽️ Средства для посуды',
         items: [
           { code: 'СМП-061', name: 'LIBY 2кг', desc: 'Гель для посуды, экологичный, с витаминами', price: 1907 },
           { code: 'СМП-731', name: 'LIBY 2кг (лимон)', desc: 'Гель для посуды, экологичный, с витаминами', price: 1439 },
@@ -296,7 +348,7 @@
           <div class="product-desc">${item.desc}</div>
           <div class="product-price ${!item.price ? 'price-request' : ''}">${formatPrice(item.price)}</div>
           <a href="https://wa.me/77778638877?text=Здравствуйте!%20Хочу%20заказать%20арт.%20${encodeURIComponent(item.code)}%20—%20${encodeURIComponent(item.name)}"
-             class="product-order" target="_blank">Заказать</a>
+             class="product-order" target="_blank">🛒 Заказать</a>
         </div>
       `).join('');
     }
@@ -311,7 +363,6 @@
 
     renderProducts('toilet_paper');
 
-    // === ЛАЙТБОКС ===
     function openLightbox(card) {
       const img = card.querySelector('img');
       document.getElementById('lightbox-img').src = img.src;
